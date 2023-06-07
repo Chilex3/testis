@@ -2,14 +2,27 @@ package com.jestinPBO.pertemuan7;
 
 import javax.swing.*;
 
-public class RegisForm {
-    private JTextField textField1;
-    private JTextField textField2;
+public class RegisForm extends JFrame{
+    private JTextField txtNama;
+    private JTextField textNim;
     private JComboBox comboBox1;
-    private JTextField textField3;
+    private JTextField noTelp;
     private JRadioButton priaRadioButton;
     private JRadioButton wanitaRadioButton;
-    private JTextArea textArea1;
+    private JTextArea Alamat;
     private JButton saveButton;
     private JButton clearButton;
+    private JPanel mainPanel;
+
+    public RegisForm(){
+        super("Formulir Registrasi");
+
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setContentPane(mainPanel);
+        this.setSize(800,600);
+    }
+    public static void main(String[] args){
+        JFrame mainFrame = new RegisForm();
+        mainFrame.setVisible(true);
+    }
 }
